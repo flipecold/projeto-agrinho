@@ -1,1 +1,246 @@
 # projeto-agrinho
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* MENU */
+
+header {
+  background: #2E7D32;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 8%;
+}
+
+.navbar h1 {
+  color: white;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.navbar a:hover {
+  color: #F9A825;
+}
+
+/* HERO */
+
+.hero {
+  height: 100vh;
+
+  background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6');
+
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+
+  color: white;
+  text-align: center;
+
+  z-index: 2;
+}
+
+.hero-content h2 {
+  font-size: 4rem;
+}
+
+.hero-content p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.hero-content button {
+  padding: 15px 30px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #F9A825;
+  color: white;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.hero-content button:hover {
+  transform: scale(1.05);
+}
+
+/* SEÇÕES */
+
+.section {
+  padding: 100px 8%;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+
+  color: #2E7D32;
+}
+
+.section-text {
+  text-align: center;
+  max-width: 800px;
+
+  margin: auto auto 50px;
+}
+
+/* CARDS */
+
+.cards,
+.tech-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 30px;
+}
+
+.card,
+.tech {
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+  transition: .3s;
+}
+
+.card:hover,
+.tech:hover {
+  transform: translateY(-10px);
+}
+
+/* FUNDO VERDE */
+
+.green {
+  background: #E8F5E9;
+}
+
+/* QUIZ */
+
+.quiz-container {
+  text-align: center;
+}
+
+.quiz-container button {
+  display: block;
+
+  margin: 15px auto;
+
+  padding: 12px 25px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #2E7D32;
+  color: white;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.quiz-container button:hover {
+  background: #1B5E20;
+}
+
+/* CONTADOR */
+
+.counter-section {
+  background: #2E7D32;
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+
+  padding: 60px 20px;
+
+  flex-wrap: wrap;
+}
+
+.counter-box {
+  text-align: center;
+}
+
+.counter-box h2 {
+  font-size: 3rem;
+}
+
+/* FOOTER */
+
+footer {
+  background: #1B5E20;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 40px 20px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-content h2 {
+    font-size: 2.5rem;
+  }
+
+}
